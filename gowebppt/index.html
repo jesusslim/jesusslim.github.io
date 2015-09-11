@@ -5,127 +5,165 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">     
 </head>
 <body>    
-<div id="impress">
+    <div id="impress">
 
-	<div id="bored" class="step slide" data-x="-1000" data-y="-1500">
+       <div id="bored" class="step slide" data-x="-1000" data-y="-1500">
         <center>
             <h1>Go web 开发</h1>
             <br><br>
             <h2>Slim</h2>
-        </<center>
-    </div>
+            </<center>
+        </div>
 
-    <div class="step slide" data-x="0" data-y="-1500">
-        <div class="subtitle">Golang的特点和优势</div>
-        <p class="slimp">
-            1.可直接编译成机器码，不依赖其他库，部署简单<br>
-            2.并发性好，语言层面支持并发，支持多核<br>
-            3.语言设计简洁灵活，简单易学<br>
-            4.执行性能好，适合编写一些瓶颈业务<br>
-            5.丰富的标准库，网络库<br>
-            6.扩平台编译<br>
-            7.内嵌C支持
-        </p>
-    </div>
+        <div class="step slide" data-x="0" data-y="-1500">
+            <div class="subtitle">Golang的特点和优势</div>
+            <p class="slimp">
+                1.可直接编译成机器码，不依赖其他库，部署简单<br>
+                2.并发性好，语言层面支持并发，支持多核<br>
+                3.语言设计简洁灵活，简单易学<br>
+                4.执行性能好，适合编写一些瓶颈业务<br>
+                5.丰富的标准库，网络库<br>
+                6.跨平台编译<br>
+                7.内嵌C支持
+            </p>
+        </div>
 
-    <div class="step slide" data-x="1000" data-y="-1500">
-        <div class="subtitle">Golang应用场景</div>
-        <p>
-            1.服务器编程<br>
-            2.分布式系统<br>
-            3.网络编程（Web应用、API应用等）<br>
-            4.内存数据库（groupcache）<br>
-            5.云平台
-        </p>
-        <br>
-        <div class="subtitle">案例</div>
-        <p>
-            nsq<br>
-            docker<br>
-            packer<br>
-            Doozer<br>
-            国内如七牛、阿里等都已经开始大规模使用Golang开发其云计算相关产品
-        </p>
-    </div>
+        <div class="step slide" data-x="1000" data-y="-1500">
+            <div class="subtitle">Golang应用场景</div>
+            <p>
+                1.服务器编程<br>
+                2.分布式系统<br>
+                3.网络编程（Web应用、API应用等）<br>
+                4.内存数据库（groupcache）<br>
+                5.云平台
+            </p>
+            <br>
+            <div class="subtitle">案例</div>
+            <p>
+                nsq<br>
+                docker<br>
+                packer<br>
+                Doozer<br>
+                国内如七牛、阿里等都已经开始大规模使用Golang开发其云计算相关产品
+            </p>
+        </div>
 
-    <div id="title" class="step" data-x="0" data-y="0" data-scale="4">
-        <span class="try">channel,goroutine</span>
-        <h1 class="blue">Golang<sup></sup></h1>
-        <span class="footnote" style="font-size:64px;">struct,interface</span>
-    </div>
+        <div id="title" class="step" data-x="0" data-y="0" data-scale="4">
+            <span class="try">channel,goroutine</span>
+            <h1 class="blue">Golang<sup></sup></h1>
+            <span class="footnote" style="font-size:64px;">struct,interface</span>
+        </div>
 
-    <div id="its" class="step" data-x="850" data-y="3000" data-rotate="90" data-scale="5">
-        <p ><strong class="blue">Go web 框架</strong> <br/>
-        * <a target="_blank" href="http://revel.github.io/">Revel</a> <br/>
-        * <a target="_blank" href="https://github.com/go-martini/martini">Martini</a> <br/>
-        * <a target="_blank" href="http://beego.me/">Beego</a> <br/>
-        </p>
-    </div>
+        <div id="its" class="step" data-x="850" data-y="3000" data-rotate="90" data-scale="5">
+            <p ><strong class="blue">Go web 框架</strong> <br/>
+                * <a target="_blank" href="http://revel.github.io/">Revel</a> <br/>
+                * <a target="_blank" href="https://github.com/go-martini/martini">Martini</a> <br/>
+                * <a target="_blank" href="http://beego.me/">Beego</a> <br/>
+            </p>
+        </div>
 
-    <div id="big" class="step" data-x="3500" data-y="2100" data-rotate="180" data-scale="6">
-        <p class="fs30">路由、API<b>mvc</b> <span class="thoughts fs30">数据库查询、缓存、日志等</span></p>
-    </div>
+        <div id="big" class="step" data-x="3500" data-y="2100" data-rotate="180" data-scale="6">
+            <p class="fs30">路由、API<b>mvc</b> <span class="thoughts fs30">数据库查询、缓存、日志等</span></p>
+        </div>
 
-    <div id="tiny" class="step" data-x="2825" data-y="2325" data-z="-3000" data-rotate="300" data-scale="1">
-        <div class="subtitle">beego路由注册</div>
-        <p>and <b>tiny</b> ideas</p>
-    </div>
+        <div id="tiny" class="step" data-x="2825" data-y="2325" data-z="-3000" data-rotate="300" data-scale="1">
+            <div class="subtitle">beego路由注册</div>
+            <p class="miniFont alignLeft">
+                RESTful:<br>
+                beego.Router("/api/list",&RestController{},"*:ListFood")<br>
+                beego.Router("/api/create",&RestController{},"post:CreateFood")<br>
+                beego.Router("/api/update",&RestController{},"put:UpdateFood")<br>
+                beego.Router("/api/delete",&RestController{},"delete:DeleteFood")<br>
+                <br>
+                自动匹配:<br>
+                beego.AutoRouter(&controllers.ObjectController{})<br>
+                <br>
+                注解:<br>
+                // @router /staticblock/ [get]<br>
+                func (this *CMSController) StaticBlock() {<br>
+                <br>
+                }
+            </p>
+        </div>
 
-    <div id="ing" class="step" data-x="3500" data-y="-850" data-rotate="270" data-scale="6">
-        <div class="subtitle">beego controller</div>
-        <p>by <b class="positioning">positioning</b>, <b class="rotating">rotating</b> and <b class="scaling">scaling</b> them on an infinite canvas</p>
-    </div>
+        <div id="controller" class="step" data-x="3500" data-y="-850" data-rotate="270" data-scale="6">
+            <div class="subtitle">beego controller</div>
+        </div>
 
-    <div id="imagination" class="step" data-x="6700" data-y="-300" data-scale="6">
-        <div class="subtitle">beego view</div>
-        <p>the only <b>limit</b> is your <b class="imagination">imagination</b></p>
-    </div>
+        <div id="imagination" class="step" data-x="6700" data-y="-300" data-scale="6">
+            <div class="subtitle">beego view</div>
+            <!-- <p>the only <b>limit</b> is your <b class="imagination">imagination</b></p> -->
+        </div>
 
-    <div id="one-more-thing" class="step" data-x="6000" data-y="4000" data-scale="2">
-        <div class="subtitle">beego model</div>
-        <p>one more thing...</p>
-    </div>
+        <div id="one-more-thing" class="step" data-x="6000" data-y="4000" data-scale="2">
+            <div class="subtitle">beego model</div>
+            <p class="mediumFont">
+                Orm:<br>
+                o := orm.NewOrm()<br>
+                user := new(User)<br>
+                user.Name = "test"<br>
+                <br>
+                fmt.Println(o.Insert(user))<br>
+                fmt.Println(o.Update(user))<br>
+                fmt.Println(o.Read(user))<br>
+                fmt.Println(o.Delete(user))<br>
+            </p>
+        </div>
 
-    <div id="its-in-3d" class="step" data-x="6200" data-y="4300" data-z="-100" data-rotate-x="-40" data-rotate-y="10" data-scale="2">
-        <p><span class="have">have</span> <span class="you">you</span> <span class="noticed">noticed</span> <span class="its">it's</span> <span class="in">in</span> <b>3D<sup>*</sup></b>?</p>
-        <span class="footnote">* beat that, prezi ;)</span>
-    </div>
+        <div id="its-in-3d" class="step" data-x="6200" data-y="4300" data-z="-100" data-rotate-x="-40" data-rotate-y="10" data-scale="2">
+            <div class="subtitle">beego model</div>
+            <p>
+                Sql:<br>
+            </p>
+        </div>
 
-    <div id="source" class="step" data-x="6300" data-y="2000" data-rotate="20" data-scale="4">
-        <div class="subtitle">Links</div>
-        <p>want to know more?</p>
-        <q><a href="http://github.com/bartaz/impress.js">use the source</a>, Luke!</q>
-    </div>
+        <div id="ing" class="step" data-x="6300" data-y="2000" data-rotate="20" data-scale="4">
+            <div class="subtitle">Links</div>
+            <p class="mediumFont">
+                https://<b class="positioning">gowalker</b>.org/<br><br>
+                http://www.<b class="rotating">golangtc</b>.com/<br><br>
+                http://<b class="scaling">go-search</b>.org/
+            </q>
+        </div>
 
-	<div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
-    </div>
+        <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
+        </div>
 
-</div>
-<link href="css/impress-demo.css" rel="stylesheet" />
-<style>
-	body{
-		background: #F0FFFF;
-	}
-    #bored{
-        padding-top: 300px;
-    }
-    #bored h1{
-        font-size: 64px;
-    }
-    .subtitle{
-        width: 100%;
-        height: 70px;
-        color: #428bca;
-    }
-    .slimp{
-        line-height: 45px;
-    }
-    .blue{
-        color: #428bca;
-    }
-    .fs30{
-        font-size: 40px !important;
-    }
+    </div>
+    <link href="css/impress-demo.css" rel="stylesheet" />
+    <style>
+    body{
+      background: #F0FFFF;
+  }
+  #bored{
+    padding-top: 300px;
+}
+#bored h1{
+    font-size: 64px;
+}
+.subtitle{
+    width: 100%;
+    height: 70px;
+    color: #428bca;
+}
+.slimp{
+    line-height: 45px;
+}
+.blue{
+    color: #428bca;
+}
+.fs30{
+    font-size: 40px !important;
+}
+.miniFont{
+    font-size: 20px;
+}
+.mediumFont{
+    font-size: 30px;
+}
+.alignLeft{
+    text-align: left;
+}
 </style>
 <script type="text/javascript" src="js/impress.js"></script>
 <script>impress().init();</script>
